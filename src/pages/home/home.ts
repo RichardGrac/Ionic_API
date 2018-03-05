@@ -19,7 +19,7 @@ export class HomePage {
     this.proveedor.getData()
     .subscribe(
       (data) => {this.users = data;}, 
-      //generamos error en caso de que ocurra
+      // generamos error en caso de que ocurra
       (error) => {console.log(error);}
     )
   }
