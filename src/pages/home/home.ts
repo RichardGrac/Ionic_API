@@ -14,7 +14,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, public proveedor: Proveedor1Provider) {}
 
   ionViewDidLoad(){
-    // subscribe := rescatamos los datos (en data - que sería el json) y los pasamos a una variable propia
+    // subscribe := rescatamos los datos (en 'data' - que sería el json) y los pasamos a una variable propia
     // que contenga todos los datos (usuarios)
     this.proveedor.getData()
     .subscribe(
